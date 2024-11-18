@@ -6,7 +6,7 @@ Repository che contiene la documentazione da consegnare dei Six Bit Busters (Gru
 - Diviesti Filippo
 - Djossa Edgar
 - Pincin Matteo
-- Soranzo Andrea
+- Soranzo Andreah
 ## Contenuti
 Il repository è composto dalle cartelle:
 - **.github**: Cartella che contiene i file sorgente delle GitHub Action
