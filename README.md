@@ -14,3 +14,4 @@ Il repository è composto dalle cartelle:
 - **Verbali interni**: Cartella contenente i verbali interni, relativi agli incontri tra membri del gruppo
 ## Contatti
 **Indirizzo email**: 6bitbusters@gmail.com
+sdadadad
