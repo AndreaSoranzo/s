@@ -26,7 +26,7 @@ jobs:
           elif [ -n "$changed_document" ]; then 
             echo "No document was modified"
           fi
-          echo "doc=$$changed_document" >> $GITHUB_OUTPUT
+          echo "doc=$changed_document" >> $GITHUB_OUTPUT
       - name : Install dependencies
         run: |
           if [ -n "${{ steps.find.outputs.doc }}" ]; then
