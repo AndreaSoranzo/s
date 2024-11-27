@@ -36,7 +36,6 @@ jobs:
         run: |
           if [ -n "${{ steps.find.outputs.doc }}" ]; then
             directory="${{ steps.find.outputs.doc }}"
-            file="${{ steps.find.outputs.doc }}/main.tex"
             cd "$directory"
-            pdflatex "$file"        
+            pdflatex main.tex        
           fi
