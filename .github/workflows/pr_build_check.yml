@@ -15,8 +15,9 @@ jobs:
           git remote set-branches --add origin main
           git fetch
           changed_files=$(git diff --name-only origin/main | grep 'main.tex$') || true
-          changed_document= $(echo "$changed_files") 
-          echo "$changed_document"
+          # changed_document= $(echo "$changed_files") 
+          echo "$changed_files"
+          # echo "$changed_document"
           if [ $(echo "$changed_files" | wc -l) -gt 1 ]; then
             echo "::error::You are supposed to modify one document per branch"
             exit 1
