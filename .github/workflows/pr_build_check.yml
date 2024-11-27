@@ -14,7 +14,7 @@ jobs:
         run: |
           git remote set-branches --add origin main
           git fetch
-          changed_files=$(git diff --name-only origin/main | grep '.tex$') || true
+          changed_files=$(git diff --name-only origin/$GITHUB_BASE_REF | grep '.tex$') || true
           changed_document=$(echo "$changed_files" | cut -d/ -f3 | uniq) 
           echo "$changed_files"
           echo "$changed_document"
