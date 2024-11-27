@@ -23,7 +23,7 @@ jobs:
             echo "::error::You are supposed to modify one document per branch"
             echo "::error::You modified: $changed_document"
             exit 1
-          elif [ -n "$changed_document" ]; then 
+          elif [ $(echo "$changed_document" | wc -l) -eq 0 ]; then 
             echo "No document was modified"
           fi
           echo "doc=$changed_document" >> $GITHUB_OUTPUT
